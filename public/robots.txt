@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ski-high-cb3ee1fa.zappy5.app/sitemap.xml
