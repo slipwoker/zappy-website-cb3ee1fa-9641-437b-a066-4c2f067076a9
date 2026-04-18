@@ -791,123 +791,158 @@
 
   
   <main>
-    <section class="about-hero-section" data-layout-spec="About-hero">
-  <div class="about-hero-section__diagonal-ribbon"></div>
-  
-  <div class="about-hero-section__container">
-    <div class="about-hero-section__grid">
-      <!-- Imagery Column (START) -->
-      <div class="about-hero-section__imagery-column">
-        <div class="about-hero-section__snow-backplate"></div>
+    <section class="contact-hero-section" data-layout-spec="Contact-hero">
+  <div class="contact-hero-container">
+    <div class="contact-hero-content">
+      <div class="form-column">
+        <h1>צור קשר עם Ski-High</h1>
+        <p class="intro-text">שתף אותנו במטרות שלך ובסוג הטיול או ההדרכה שמעניין אותך – נחזור אליך במהירות עם המלצות מותאמות אישית.</p>
         
-        <div class="about-hero-section__main-image-wrapper">
-          <img data-placeholder="about-hero-main-portrait" data-context="Professional ski instructor teaching on snowy mountain slope in Hermon, Israel. Portrait orientation showing instructor in winter gear demonstrating skiing technique to students, bright sunny day, snow-covered peaks in background, dynamic action shot" width="500" height="700" src="/assets/site-about-image-1.webp" alt="מדריך סקי מקצועי מלמד על מדרונות החרמון" class="about-hero-section__main-image">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">שם מלא</label>
+            <input type="text" id="contact-name" name="name" placeholder="הכנס את שמך" required="">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-email">אימייל</label>
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required="">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-phone">טלפון</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="050-1234567" required="">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">הודעה</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="ספר לנו על התוכניות שלך..." required=""></textarea>
+          </div>
+          
+          <!-- privacy-consent-fix -->
+<div class="privacy-consent" style="color: var(--text-dark, #333)">
+  <label class="privacy-consent-label">
+    <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required />
+    <span>קראתי ואני מסכים/ה ל<a href="/terms" target="_blank">תנאי השימוש</a> ול<a href="/privacy" target="_blank">מדיניות הפרטיות</a></span>
+  </label>
+</div>
+<script data-privacy-consent-validation>(function(){if(window._zpcv)return;window._zpcv=1;document.addEventListener("submit",function(e){var f=e.target;if(!f||f.tagName!=="FORM")return;var cb=f.querySelector(".privacy-consent-checkbox");if(!cb||cb.checked)return;e.preventDefault();e.stopImmediatePropagation();var isHe=document.documentElement.lang==="he"||document.documentElement.dir==="rtl";var msg=isHe?"יש לאשר את תנאי השימוש ומדיניות הפרטיות כדי להמשיך":"Please accept the Terms & Conditions and Privacy Policy to continue";if(typeof window.zappyNotify==="function"){window.zappyNotify(msg,"error")}else if(typeof window.showNotification==="function"){window.showNotification(msg,"error")}else{var ex=document.querySelectorAll(".zappy-privacy-error");ex.forEach(function(el){el.remove()});var n=document.createElement("div");n.className="zappy-privacy-error";n.style.cssText="position:fixed;top:20px;right:20px;max-width:400px;padding:14px 18px;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:10000;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px";n.textContent=msg;document.body.appendChild(n);setTimeout(function(){if(n.parentElement)n.remove()},6000)}cb.focus()},true)})();</script>
+<button type="submit" class="btn-submit">שלח הודעה</button>
+        </form>
+        
+        <div class="contact-details-block">
+          <h3>פרטי התקשרות</h3>
+          <p class="contact-info">
+            <strong>אימייל:</strong> [business_email]<br>
+            <strong>טלפון:</strong> [business_phone]<br>
+            <strong>כתובת:</strong> [business_address]
+          </p>
+          <p class="response-time">אנחנו חוזרים בדרך כלל תוך 24 שעות בימי עבודה.</p>
         </div>
-        
-        <div class="about-hero-section__terrain-tile">
-          <img data-placeholder="about-hero-terrain-abstract" data-context="Abstract aerial view of ski slopes and mountain terrain patterns, snow textures and ski tracks creating geometric patterns, artistic overhead shot of winter mountain landscape, cool blue and white tones" width="300" height="250" src="/assets/site-about-image-2.webp" alt="מרקם פסי סקי על שלג" class="about-hero-section__terrain-image">
+      </div>
+      
+      <div class="imagery-column">
+        <div class="image-wrapper">
+          <div class="snow-backplate"></div>
+          <img data-placeholder="contact-hero-image-1" data-context="Serene winter mountain landscape with fresh snow covering a gentle ski trail, soft morning light creating a peaceful atmosphere, wide vista of snowy peaks in the background, perfect for outdoor sports and skiing activities in Israel, calm and inviting scene" width="600" height="700" src="/assets/site-contact-image-1.webp" alt="נוף הרים מושלג ושקט עם מסלול סקי">
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-features-section" data-layout-spec="Contact-features">
+  <div class="diagonal-divider"></div>
+  <div class="features-container">
+    <h2 class="features-title">מה קורה אחרי שאתם יוצרים קשר</h2>
+    <div class="features-grid">
+      <div class="feature-card feature-card-1">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 9H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M9 13H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 class="feature-heading">אנחנו חוזרים עם שאלות מבהירות</h3>
+        <p class="feature-text">נשמח לשמוע על הרמה שלכם, היעדים המעניינים אתכם וכל פרט שיעזור לנו להבין בדיוק מה אתם מחפשים – בין אם זה שיעור סקי בחרמון או טיול הרים באירופה.</p>
+      </div>
       
-      <!-- Content Column (END) -->
-      <div class="about-hero-section__content-column">
-        <h1 class="about-hero-section__title">אודות Ski-High</h1>
-        
-        <p class="about-hero-section__paragraph">המשימה שלנו היא להפוך כל יום סקי לחוויה בטוחה ומרגשת. אנחנו מאמינים שסקי הוא לא רק ספורט – זו דרך חיים, הזדמנות להתחבר לטבע ולאתגר את עצמך בכל רמה.</p>
-        
-        <p class="about-hero-section__paragraph">בין אם אתם מתחילים שרוצים לעשות את הפניות הראשונות או גולשים מתקדמים שמחפשים לשכלל את הטכניקה – אנחנו כאן. עם דגש על בטיחות, קצב מותאם אישית, בניית מיומנויות שלב אחר שלב ומסלולים בלתי נשכחים בחרמון ובחו״ל.</p>
-        
-        <a href="#contact" class="about-hero-section__cta">צרו קשר</a>
+      <div class="feature-card feature-card-2">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M9 18H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M9 12H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 class="feature-heading">אנחנו מציעים תוכנית מותאמת</h3>
+        <p class="feature-text">על בסיס השיחה, נציע לכם מסלול מדויק – אימון אישי או קבוצתי, טיול מאורגן או ליווי פרטי – עם כל הפרטים הרלוונטיים כדי שתדעו בדיוק למה אתם נרשמים.</p>
+      </div>
+      
+      <div class="feature-card feature-card-3">
+        <div class="feature-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="feature-heading">אנחנו מאשרים את השלבים הבאים</h3>
+        <p class="feature-text">ברגע שאתם מרגישים בנוח עם התוכנית, נסכם ביחד את מה שקורה הלאה – תאריכים, מפגשים, נקודות מפתח – בלי הפתעות ובלי התחייבויות מיותרות.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="about-team-section" data-layout-spec="About-team">
-  <div class="team-container">
-    <h2 class="team-title">האנשים מאחורי ההדרכה</h2>
-    
-    <div class="team-grid">
-      <div class="team-card team-card-1">
-        <img data-placeholder="about-team-image-1" data-context="Professional ski instructor portrait on snowy mountain slope, wearing Ski-High branded winter gear, friendly smile, action-oriented outdoor sports photography, natural lighting, Israeli instructor" width="300" height="300" src="/assets/site-about-image-3.webp" alt="מדריך סקי מקצועי" class="team-photo">
-        <h3 class="team-name">רועי כהן</h3>
-        <p class="team-title-role">מדריך ראשי ומנהל טכני</p>
-        <p class="team-bio">עם ניסיון של 12 שנים בהדרכת סקי בחרמון ובאתרי high country ski באירופה, רועי מתמחה בהדרכה למתקדמים ובטכניקות סקי מורכבות. בעל הסמכות בינלאומיות והכשרה במדרונות high tatra.</p>
-      </div>
-      
-      <div class="team-card team-card-2">
-        <img data-placeholder="about-team-image-2" data-context="Female ski instructor smiling in winter mountain setting, professional outdoor sports attire, mountain high snow background, confident pose, Israeli winter sports professional" width="300" height="300" src="/assets/site-about-image-4.webp" alt="מדריכת סקי" class="team-photo">
-        <h3 class="team-name">מיכל לוי</h3>
-        <p class="team-title-role">מדריכת סקי ומומחית למתחילים</p>
-        <p class="team-bio">מיכל מביאה גישה סבלנית ומעודדת להדרכת מתחילים. עם התמחות בבניית ביטחון על המדרון והתאמת טכניקות לרמות שונות, היא מלווה מאות גולשים בשלבים הראשונים שלהם.</p>
-      </div>
-      
-      <div class="team-card team-card-3">
-        <img data-placeholder="about-team-image-3" data-context="Young energetic ski instructor in action on slopes, dynamic winter sports photography, high one ski resort environment, professional gear, mountain backdrop" width="300" height="300" src="/assets/site-about-image-5.webp" alt="מדריך סקי" class="team-photo">
-        <h3 class="team-name">יונתן אברהם</h3>
-        <p class="team-title-role">מדריך סקי וספורט חורף</p>
-        <p class="team-bio">יונתן משלב אנרגיה צעירה עם ידע מקצועי מעמיק. מתמחה בהדרכה לנוער ובטכניקות freestyle, והוא אחראי על תכנון מסלולי ההדרכה המתקדמים שלנו.</p>
-      </div>
-    </div>
-    
-    <div class="safety-note-card">
-      <h3 class="safety-note-title">בטיחות והכנה - הפילוסופיה שלנו</h3>
-      <p class="safety-note-text">כל חבר צוות עובר הכשרות בטיחות שנתיות ומוסמך בעזרה ראשונה. אנחנו מאמינים שהדרכה איכותית מתחילה בהכנה נכונה - בדיקת ציוד, הערכת תנאי שלג ותכנון מסלולים מותאמים אישית. הבטיחות שלכם היא בראש סדר העדיפויות.</p>
+<section class="contact-cta-section" data-layout-spec="Contact-cta">
+  <div class="contact-cta-section__angle-top"></div>
+  <div class="contact-cta-section__container">
+    <div class="contact-cta-section__content">
+      <h2 class="contact-cta-section__heading">מעדיפים לעיין קודם?</h2>
+      <p class="contact-cta-section__text">גלו את מגוון התוכניות שלנו - מהדרכות סקי בחרמון ועד טיולי חו״ל מרגשים. בחרו את החוויה המושלמת עבורכם.</p>
+      <a href="/programs" class="contact-cta-section__btn btn-primary">סקור תוכניות</a>
     </div>
   </div>
-</section>
-
-<section class="about-stats-section" data-layout-spec="About-stats">
-  <div class="stats-container">
-    <div class="stats-header">
-      <h2>בנויים על עקביות</h2>
-    </div>
-    <div class="stats-grid">
-      <div class="stat-block">
-        <h3>15+ שנות ניסיון</h3>
-        <p>מדריכי סקי מוסמכים עם ניסיון רב שנים בהרמון ובאתרי סקי מובילים ברחבי העולם</p>
+  <footer class="contact-cta-section__footer">
+    <div class="contact-cta-section__footer-container">
+      <div class="contact-cta-section__footer-nav">
+        <a href="/">דף הבית</a>
+        <a href="/programs">תוכניות</a>
+        <a href="/about">אודות</a>
+        <a href="/contact-us">צור קשר</a>
       </div>
-      <div class="stat-block">
-        <h3>קבוצות של 6-8</h3>
-        <p>גודל קבוצה אידיאלי המאפשר תשומת לב אישית לכל משתתף תוך שמירה על דינמיקה חברתית</p>
+      <div class="contact-cta-section__footer-contact">
+        <div class="contact-cta-section__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>[business_email]</span>
+        </div>
+        <div class="contact-cta-section__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>[business_phone]</span>
+        </div>
+        <div class="contact-cta-section__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>[business_address]</span>
+        </div>
       </div>
-      <div class="stat-block">
-        <h3>2-5 ימים</h3>
-        <p>טווח משך טיפוסי לחוויית סקי מלאה - מקורסים אינטנסיביים ועד טיולי סקי מקיפים</p>
+      <div class="contact-cta-section__footer-social">
+        <a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
-      <div class="stat-block">
-        <h3>תדריך בטיחות מלא</h3>
-        <p>לפני כל יציאה למדרון - הדרכת בטיחות מקיפה, בדיקת ציוד ותרגול נהלי חירום</p>
+      <div class="contact-cta-section__footer-copy">
+        <p>© 2024 Ski-High. כל הזכויות שמורות.</p>
       </div>
     </div>
-  </div>
-  <div class="powder-wash"></div>
-</section>
-
-<section class="about-cta-section" data-layout-spec="About-cta">
-  <div class="about-cta-section__divider">
-    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 L1200,20 L1200,80 L0,80 Z" fill="var(--bg-dark)"></path>
-    </svg>
-  </div>
-  <div class="about-cta-section__container">
-    <div class="about-cta-section__content">
-      <h2 class="about-cta-section__title">מוכנים לשוחח על האפשרויות?</h2>
-      <p class="about-cta-section__text">שתפו אותנו ביעדים שלכם וברמת הניסיון – נעזור לכם למצוא את המסלול המושלם בין הדרכות סקי בחרמון לטיולי חו״ל מותאמים אישית. בין אם אתם מתחילים או גולשים מתקדמים, נשמח להתאים עבורכם את החוויה האידיאלית בהרים.</p>
-      <a href="#contact" class="about-cta-section__btn btn-primary">צור קשר</a>
-    </div>
-    <div class="about-cta-section__accent-lines" aria-hidden="true">
-      <svg class="about-cta-section__line about-cta-section__line--1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="0" x2="200" y2="200" stroke="currentColor" stroke-width="2"></line>
-      </svg>
-      <svg class="about-cta-section__line about-cta-section__line--2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <line x1="50" y1="0" x2="200" y2="150" stroke="currentColor" stroke-width="2"></line>
-      </svg>
-      <svg class="about-cta-section__line about-cta-section__line--3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="100" x2="150" y2="200" stroke="currentColor" stroke-width="2"></line>
-      </svg>
-    </div>
-  </div>
+  </footer>
 </section>
   </main>
   

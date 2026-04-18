@@ -1,53 +1,43 @@
-# Ski-High — Generative Engine Optimization Map
-
-> A ספורט וחוץ business.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### Home
-https://ski-high-cb3ee1fa.zappy5.app
+https://example.com
 
 ### About
-https://ski-high-cb3ee1fa.zappy5.app/about
+https://example.com/about
 
 ### Programs
-https://ski-high-cb3ee1fa.zappy5.app/programs
+https://example.com/programs
 
 ### Contact
-https://ski-high-cb3ee1fa.zappy5.app/contact
+https://example.com/contact-us
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://ski-high-cb3ee1fa.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://ski-high-cb3ee1fa.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://ski-high-cb3ee1fa.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Ski-High
-Ski-High is a business in the ספורט וחוץ industry.
-
-## Target Audience
-מתחילים וגולשים מתקדמים
-
-## Industry
-ספורט וחוץ
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://ski-high-cb3ee1fa.zappy5.app/sitemap.xml
-- **Robots.txt**: https://ski-high-cb3ee1fa.zappy5.app/robots.txt
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
